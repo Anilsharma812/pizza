@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizzenia - The Pizza Paradise</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #fff8f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #d62828;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd166;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601924572404-7ecae07e8f94?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: #d62828;
+    }
+
+    .pizza-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .pizza {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 300px;
+      padding: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .pizza img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .pizza h3 {
+      margin-bottom: 0.5rem;
+      color: #333;
+    }
+
+    .pizza p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .pizza a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #d62828;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .pizza:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Pizzenia</div>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#veg">Veg Pizza</a></li>
+        <li><a href="#nonveg">Non-Veg Pizza</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hot, Fresh & Delivered Fast 🍕</h1>
+  </section>
+
+  <section class="section" id="menu">
+    <h2>Our Best Sellers</h2>
+    <div class="pizza-grid">
+      <div class="pizza">
+        <img src="https://atsloanestable.com/wp-content/uploads/2023/06/new-york-style-pizza2.jpg">
+        <h3>Pepperoni Pizza</h3>
+        <p>Classic delight loaded with pepperoni and mozzarella cheese.</p>
+        <a href="#nonveg">Explore More</a>
+      </div>
+      <div class="pizza">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80" alt="Margherita Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Simple and fresh — tomato, basil, and mozzarella.</p>
+        <a href="#veg">Explore More</a>
+      </div>
+      <div class="pizza">
+        <img src="https://bluebowlrecipes.com/wp-content/uploads/2019/05/barbecue-chicken-pizza-0917.jpg">
+        <h3>BBQ Chicken Pizza</h3>
+        <p>Smoky BBQ sauce with grilled chicken and red onions.</p>
+        <a href="#nonveg">Explore More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="veg">
+    <h2>Veg Pizzas</h2>
+    <div class="pizza-grid">
+      <div class="pizza">
+        <img src="https://www.dominos.co.in//files/items/Farmhouse.jpg">
+        <h3>Farmhouse Pizza</h3>
+        <p>Loaded with capsicum, onions, tomatoes, and olives.</p>
+      </div>
+      <div class="pizza">
+        <img src="https://cdn.dotpe.in/longtail/store-items/7885519/AX0Cb4c6.jpeg">
+        <h3>Cheese Burst</h3>
+        <p>Oozing cheese inside the crust for that perfect melt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="nonveg">
+    <h2>Non-Veg Pizzas</h2>
+    <div class="pizza-grid">
+      <div class="pizza">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRKqHzyF-TSM3qY-EbgCdwaLsBbwFQ_YVSvg&s">
+        <h3>Meat Lovers</h3>
+        <p>Loaded with chicken, bacon, sausage & ham.</p>
+      </div>
+      <div class="pizza">
+        <img src="https://www.teaforturmeric.com/wp-content/uploads/2017/11/tandoori-chicken-pizza-4442-500x500.jpg">
+        <h3>Spicy Chicken</h3>
+        <p>Grilled chicken, jalapeños, and spicy chipotle sauce.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Pizzenia</h2>
+    <p style="max-width: 700px; margin: auto; font-size: 1rem; color: #555;">
+      At <strong>Pizzenia</strong>, we're passionate about bringing the freshest, most delicious pizzas to your doorstep. From crispy crusts to sizzling toppings, we combine tradition with taste in every bite. Whether you're craving classic margherita or loaded meat-lovers, we’ve got something for everyone.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Pizzenia. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
